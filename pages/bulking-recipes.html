@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Ensures proper rendering and touch zooming on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO meta tags -->
+    <meta name="description" content="Low calorie, high protein recipes for cutting phase">
+    <meta name="keywords" content="low calorie recipes, high protein, cutting meals, healthy recipes">
+    <meta name="author" content="Noah Stone">
+    
+    <title>Low-Cal Recipes - Iconic Flavor Vault</title>
+    <!-- Link to main stylesheet - using relative path ../css since we're in pages directory -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Header Section with Navigation -->
+    <header>
+        <nav class="main-nav">
+            <!-- Website branding -->
+            <div class="logo">
+                <h1>Iconic Flavor Vault</h1>
+            </div>
+            <!-- Main navigation menu - note the relative paths -->
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="low-cal-recipes.html" class="active">Low-Cal Recipes</a></li>
+                <li><a href="bulking-recipes.html">Bulking Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content wrapper -->
+    <main class="main-content">
+        <!-- Page header with filters section -->
+        <section class="recipes-header">
+            <h1>Low-Calorie High-Protein Recipes</h1>
+            <!-- Recipe filtering and search tools -->
+            <div class="filters">
+                <!-- Dropdown for sorting options -->
+                <select name="sort" id="sort">
+                    <option value="newest">Newest First</option>
+                    <option value="calories">Calories: Low to High</option>
+                    <option value="protein">Protein: High to Low</option>
+                </select>
+                <!-- Search input for recipe filtering -->
+                <input type="search" placeholder="Search recipes..." id="search">
+            </div>
+        </section>
+
+        <!-- Recipe grid container -->
+        <section class="recipes-grid">
+            <!-- Individual Recipe Card Template -->
+            <article class="recipe-card">
+                <!-- Recipe image container with calorie overlay -->
+                <div class="recipe-image">
+                    <img src="../assets/recipes/placeholder.jpg" alt="Recipe Name">
+                    <!-- Calorie indicator overlay -->
+                    <span class="calories">400 kcal</span>
+                </div>
+                <!-- Recipe details container -->
+                <div class="recipe-content">
+                    <h2>Recipe Name</h2>
+                    <!-- Macronutrient information -->
+                    <div class="recipe-meta">
+                        <span>40g protein</span>
+                        <span>15g carbs</span>
+                        <span>10g fat</span>
+                    </div>
+                    <!-- Brief recipe description -->
+                    <p class="recipe-description">Brief description of the recipe...</p>
+                    <!-- Call-to-action button -->
+                    <a href="#" class="btn">View Recipe</a>
+                </div>
+            </article>
+            <!-- Additional recipe cards will be dynamically added here -->
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2025 Iconic Flavor Vault. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript files will be added here -->
+    <!-- <script src="../js/recipes.js"></script> -->
+</body>
+</html>
