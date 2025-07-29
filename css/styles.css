@@ -1,6 +1,4 @@
-/* ==========================================================================
-   Base styles and CSS Reset
-   ========================================================================== */
+/* Base styles and CSS Reset */
 * {
     margin: 0;
     padding: 0;
@@ -21,11 +19,9 @@ body {
     flex: 1;
 }
 
-/* ==========================================================================
-   Navigation Styles
-   ========================================================================== */
+/* Navigation Styles */
 .main-nav {
-    background: #2c3e50; /* Dark blue background */
+    background: #2c3e50;
     padding: 1rem;
     color: white;
     display: flex;
@@ -37,7 +33,7 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 2rem; /* Space between nav items */
+    gap: 2rem;
 }
 
 /* Navigation links */
@@ -48,23 +44,18 @@ body {
     /* TODO: Add hover effects */
 }
 
-/* ==========================================================================
-   Hero Section Styles
-   ========================================================================== */
+/* Hero Section Styles */
 .hero {
     text-align: center;
     padding: 4rem 2rem;
-    background: #ecf0f1; /* Light gray background */
+    background: #ecf0f1; 
     /* TODO: Add background image */
     /* TODO: Add overlay effect */
 }
 
-/* ==========================================================================
-   Category Section Styles
-   ========================================================================== */
+/* Category Section Styles */
 .categories {
     display: grid;
-    /* Responsive grid that adjusts based on viewport width */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     padding: 2rem;
@@ -85,7 +76,7 @@ body {
 .btn {
     display: inline-block;
     padding: 0.8rem 1.5rem;
-    background: #3498db; /* Blue button background */
+    background: #3498db; 
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -93,20 +84,16 @@ body {
     /* TODO: Add hover effect */
 }
 
-/* ==========================================================================
-   Footer Styles
-   ========================================================================== */
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 2rem;
-    background: #2c3e50; /* Dark blue background matching nav */
+    background: #2c3e50;
     color: white;
     margin-top: auto;
 }
 
-/* ==========================================================================
-   Media Queries for Responsive Design
-   ========================================================================== */
+/* Media Queries for Responsive Design */
 /* Tablet and smaller screens */
 @media (max-width: 768px) {
     .nav-links {
