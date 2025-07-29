@@ -114,6 +114,12 @@ footer {
 }
 
 /* Media Queries for Responsive Design */
+
+/* Mobile screens */
+@media (max-width: 480px) {
+    /* TODO: Add mobile-specific styles */
+}
+
 /* Tablet and smaller screens */
 @media (max-width: 768px) {
     #bar-menu {
@@ -123,9 +129,25 @@ footer {
     /* TODO: Add responsive typography */
 }
 
-/* Mobile screens */
-@media (max-width: 480px) {
-    /* TODO: Add mobile-specific styles */
+/* Tablet and larger screens */
+@media (min-width: 769px) {
+    .nav-links {
+        display: flex; /* Show navigation links in a row */
+    }
+    #bar-menu {
+        display: none; /* Hide menu icon on larger screens */
+    }
+    .active {
+        position: static; /* Reset position for larger screens */
+        width: auto; /* Reset width */
+        background: transparent; /* Reset background */
+        padding: 0; /* Reset padding */
+    }
+}
+
+/* Laptop / Desktop screens */
+@media (min-width: 1366px) {
+
 }
 
 /* ==========================================================================
